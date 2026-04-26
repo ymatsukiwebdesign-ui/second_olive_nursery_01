@@ -4,6 +4,8 @@ const spNav = document.querySelector(".sp-nav");
 const spNavLinks = document.querySelectorAll(".sp-nav a");
 const pageTop = document.querySelector(".page-top");
 
+/* 全画面の際はここを消す */
+
 if (header) {
   let lastScrollY = window.scrollY;
 
@@ -25,6 +27,8 @@ if (header) {
     lastScrollY = currentScrollY;
   });
 }
+
+/* 全画面の際はここを消す */
 
 if (hamburger && spNav) {
   hamburger.addEventListener("click", () => {
@@ -77,29 +81,3 @@ const fadeObserver = new IntersectionObserver(
 fadeItems.forEach((item) => {
   fadeObserver.observe(item);
 });
-
-// ===== オープニング =====
-/*
-const pigeon = document.getElementById("pigeon");
-
-const pigeonImages = [
-  "images/pigeon_up01.png",
-  "images/pigeon_down01.png"
-];
-
-let index = 0;
-
-// 羽ばたき（2枚切り替え）
-setInterval(() => {
-  index = (index + 1) % 2;
-  pigeon.src = pigeonImages[index];
-}, 400); // ←ここが速さ（300〜600で調整OK）
-
-// 3秒後にフェードアウト
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.getElementById("opening").classList.add("fade-out");
-  }, 3000);
-});
-*/
-
