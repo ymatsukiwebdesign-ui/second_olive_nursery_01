@@ -321,7 +321,7 @@ html {
   width: 100%;
   height: 100vh;
   min-height: 720px;
-  background: url("images/hero.png") no-repeat center center / cover;
+  background: url("images/hero_02_1.png") no-repeat center center / cover;
   overflow: hidden;
   border-radius: 20px;
   margin-top: 0;
@@ -420,7 +420,7 @@ html {
 
 .intro-title {
   margin: 0 0 40px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.8;
   letter-spacing: 0.12em;
@@ -788,8 +788,8 @@ html {
 
 .recruit-text {
   margin: 0 auto 50px;
-  max-width: 700px;
-  font-size: 16px;
+  max-width: 510px;
+  font-size: 15px;
   line-height: 2.2;
   letter-spacing: 0.05em;
   color: #777;
@@ -815,7 +815,7 @@ html {
 }
 
 .recruit-btn {
-  margin-top: 50px;
+  margin: 40px 0 50px;
 }
 
 /* =========================
